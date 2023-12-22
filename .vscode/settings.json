@@ -1,0 +1,13 @@
+{
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular/standalone"
+  ],
+  "workbench.statusBar.visible": true,
+  "editor.suggest.showStatusBar": false,
+  "workbench.editor.enablePreviewFromCodeNavigation": false,
+  "workbench.editor.restoreViewState": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showIcons": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false
+}

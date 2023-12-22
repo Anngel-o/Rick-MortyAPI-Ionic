@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Rick & Morty API</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="4" offsetMd="4">
+        <ion-list>
+          <ion-item *ngFor="let charcater of charcaters" [routerLink]="['/profile/' + charcater.id]">
+            <ion-avatar slot="start">
+              <img [src]="charcater.image">
+            </ion-avatar>
+            <ion-label>{{charcater.name}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
